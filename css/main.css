@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  font-style: sans-serif; }
+
+nav.navbar {
+  transition: all 0.4s;
+  background: transparent;
+  position: fixed;
+  margin-top: 0px;
+  z-index: 10;
+  width: 100%; }
+  nav.navbar .navbar-brand {
+    font-size: 1.5em;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Droid Serif';
+    font-style: italic;
+    white-space: wrap; }
+  nav.navbar .navbar-toggler-icon {
+    color: white;
+    padding-right: 50px; }
+  nav.navbar ul {
+    margin-left: auto; }
+    nav.navbar ul a {
+      color: white;
+      font-size: 1.5em; }
+  nav.navbar.scrolled {
+    background-color: #0ed8d6;
+    position: fixed; }
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/header/pictures_on_the_wall.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  header .header {
+    text-align: center; }
+    header .header h1 {
+      text-transform: uppercase;
+      font-size: 2.5em;
+      color: white;
+      margin: auto;
+      padding-bottom: 30px; }
+    header .header h2 {
+      font-size: 2em;
+      color: white;
+      margin: auto;
+      padding-bottom: 30px;
+      font-family: 'Droid Serif';
+      font-style: italic; }
+    header .header .btn-first {
+      position: relative;
+      display: block;
+      background-color: #0ed8d6;
+      border-color: #0ed8d6;
+      color: white;
+      text-transform: uppercase;
+      margin: auto;
+      font-size: 2em;
+      transition: all 0.4s; }
+
+.services {
+  height: 90vh;
+  margin: 4em;
+  display: flex; }
+  .services .inner {
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .services .inner #serv {
+      color: black; }
+    .services .inner #serv-content {
+      font-family: 'Droid Serif';
+      font-style: italic; }
+  .services .serv-info {
+    width: 33%;
+    margin-top: 40px; }
+    .services .serv-info i.fas {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      color: white;
+      font-size: 25px;
+      background-color: #0ed8d6;
+      border: 1px solid #0ed8d6;
+      border-radius: 50%;
+      transition: all 0.4s;
+      text-align: center;
+      align-self: center; }
+      .services .serv-info i.fas:hover {
+        transform: rotate(360deg);
+        background-color: white;
+        color: #0ed8d6; }
+    .services .serv-info h4 {
+      margin-bottom: 15px; }
+
+@media all and (max-width: 992px) {
+  .portfolio-foto {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0px;
+    flex-wrap: wrap; }
+  .services,
+  .contact {
+    height: auto;
+    margin: 0;
+    padding: 0; }
+  .foto img {
+    max-width: 300px; }
+  .contact #name,
+  .contact #email,
+  .contact #phone,
+  .contact textarea {
+    height: 10px;
+    margin: 2px; } }
+
+#portfolio {
+  background-color: #f7f7f7;
+  padding: 30px; }
+  #portfolio .inner {
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    #portfolio .inner #port {
+      color: black; }
+    #portfolio .inner #port-content {
+      font-family: 'Droid Serif';
+      font-style: italic; }
+    #portfolio .inner .portfolio-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      #portfolio .inner .portfolio-inner .portfolio-foto {
+        width: 33%;
+        padding: 30px; }
+        #portfolio .inner .portfolio-inner .portfolio-foto .overflow {
+          background-color: white;
+          overflow: hidden; }
+          #portfolio .inner .portfolio-inner .portfolio-foto .overflow .b1 {
+            background-image: url(../img/portfolio/chestnut_on_bracket.jpg); }
+          #portfolio .inner .portfolio-inner .portfolio-foto .overflow .b2 {
+            background-image: url(../img/portfolio/box_of_cookies.jpg); }
+          #portfolio .inner .portfolio-inner .portfolio-foto .overflow .b3 {
+            background-image: url(../img/portfolio/chaotic_paint.jpg); }
+          #portfolio .inner .portfolio-inner .portfolio-foto .overflow .b4 {
+            background-image: url(../img/portfolio/child_with_blue_paint.jpg); }
+          #portfolio .inner .portfolio-inner .portfolio-foto .overflow .b5 {
+            background-image: url(../img/portfolio/house_with_blue_doors.jpg); }
+          #portfolio .inner .portfolio-inner .portfolio-foto .overflow .b6 {
+            background-image: url(../img/portfolio/typing_on_laptop.jpg); }
+          #portfolio .inner .portfolio-inner .portfolio-foto .overflow .background {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px; }
+            #portfolio .inner .portfolio-inner .portfolio-foto .overflow .background .mask {
+              height: 100%;
+              background-color: rgba(14, 216, 214, 0.6);
+              opacity: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #fff;
+              font-size: 30px;
+              overflow: hidden;
+              transition: all 0.4s; }
+              #portfolio .inner .portfolio-inner .portfolio-foto .overflow .background .mask:hover {
+                opacity: 1; }
+              #portfolio .inner .portfolio-inner .portfolio-foto .overflow .background .mask .fas {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                color: white;
+                font-size: 25px;
+                background-color: #0ed8d6;
+                border: 1px solid #0ed8d6;
+                border-radius: 50%;
+                transition: all 0.4s;
+                text-align: center;
+                align-self: center; }
+
+.team .team-text {
+  text-align: center;
+  justify-content: center; }
+  .team .team-text p {
+    font-family: 'Droid Serif';
+    font-style: italic; }
+
+.team .container-team-inner {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .team .container-team-inner .team-foto .foto {
+    text-align: center;
+    justify-content: center;
+    width: 100%; }
+    .team .container-team-inner .team-foto .foto img {
+      width: 100%; }
+  .team .container-team-inner .team-foto .team-text {
+    text-align: center;
+    justify-content: center; }
+  .team .container-team-inner .team-foto .icons {
+    text-align: center;
+    justify-content: center; }
+    .team .container-team-inner .team-foto .icons a {
+      text-align: center; }
+      .team .container-team-inner .team-foto .icons a .fab {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 50%;
+        text-align: center;
+        align-self: center;
+        transition: all 1s; }
+        .team .container-team-inner .team-foto .icons a .fab:hover {
+          background-color: #0ed8d6;
+          border: 1px solid #0ed8d6; }
+
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer/world-map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .contact #content-text {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0; }
+    .contact #content-text .contact-text {
+      justify-content: center;
+      text-align: center; }
+      .contact #content-text .contact-text p {
+        font-family: 'Droid Serif';
+        font-style: italic; }
+    .contact #content-text .contact-form .row {
+      display: flex;
+      flex-wrap: wrap; }
+      .contact #content-text .contact-form .row .labels #name {
+        height: 40px;
+        width: 90%;
+        display: block;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin: 30px; }
+      .contact #content-text .contact-form .row .labels #email {
+        height: 40px;
+        width: 90%;
+        display: block;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin: 30px; }
+      .contact #content-text .contact-form .row .labels #phone {
+        height: 40px;
+        width: 90%;
+        display: block;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin: 30px; }
+      .contact #content-text .contact-form .row textarea {
+        flex-basis: 50%;
+        height: 180px;
+        width: 90%;
+        display: block;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        margin: 30px; }
+    .contact #content-text #send {
+      width: auto;
+      color: white;
+      background-color: #0ed8d6;
+      width: 200px;
+      border-radius: 5px;
+      text-transform: uppercase; }
+
+footer {
+  text-align: center; }
+  footer .footer-inner {
+    margin: 0; }
+    footer .footer-inner h6 {
+      font-size: 10px;
+      display: inline; }
+    footer .footer-inner .icons {
+      text-align: center;
+      justify-content: center; }
+      footer .footer-inner .icons a {
+        text-align: center; }
+        footer .footer-inner .icons a .fab {
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          color: white;
+          background-color: black;
+          border: 1px solid black;
+          border-radius: 50%;
+          text-align: center;
+          align-self: center;
+          transition: all 1s; }
+
+@media all and (max-width: 992px) {
+  .portfolio-foto {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 0px;
+    flex-wrap: wrap; }
+  .services,
+  .contact {
+    height: auto;
+    margin: 0;
+    padding: 0; }
+  .foto img {
+    max-width: 300px; }
+  .contact #name,
+  .contact #email,
+  .contact #phone,
+  .contact textarea {
+    height: 10px;
+    margin: 2px; } }

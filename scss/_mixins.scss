@@ -1,0 +1,20 @@
+@mixin centrowanieFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin inputText {
+    width: 90%;
+    display: block;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+@mixin paragraphAfterHeadline {
+    font-family: 'Droid Serif';
+    font-style: italic;
+}

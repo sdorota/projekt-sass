@@ -1,0 +1,264 @@
+/*nawigacja*/
+#main-nav {
+    transition: all 0.4s;
+}
+.navbar {
+    background: transparent;
+    margin-top: 0px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand{
+    font-size: 1.5em;
+}
+
+.navbar-brand,
+h2{
+    font-family: 'Droid Serif'; 
+    font-style: italic;
+}
+.navbar a{
+    color: white;
+    font-size: 1.5em;
+}
+.scrolled {
+    background-color: rgba(14,216,214,0.6);
+}
+ul{
+    margin-left: auto;
+}
+/*header*/
+
+
+
+h1,
+h2{
+
+}
+.btn-first{
+    position: relative;
+    display: block;
+    background-color: #0ed8d6;
+    border-color: #0ed8d6;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 2em;
+    transition: all 0.4s;
+}
+/*section services*/
+.services { 
+    height: 90vh;
+    margin: 4em;
+    display: flex;
+}
+.inner{
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;   
+}
+i.fas{
+    width: 50px;
+    height:50px;
+    line-height: 50px;
+    color:white;
+    font-size: 25px;
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    border-radius: 50%;
+    transition: all 0.4s;
+    text-align: center;
+    align-self: center;
+}
+i:hover{
+    transform: rotate(360deg);
+    background-color:  white;
+    color: #0ed8d6;
+}
+.serv-info{
+    width: 33%;
+    margin-top: 40px;
+}
+h1#serv,
+h1#port,
+h1#team{
+    color: black;
+}
+#serv-content,
+#port-content{
+    font-family: 'Droid Serif'; 
+    font-style: italic;
+}
+h4{
+    margin-bottom: 15px;
+}
+
+/*portfolio*/
+#portfolio{
+    background-color: #f7f7f7;
+    padding: 30px;
+}
+.inner{
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+}
+.portfolio-foto {
+    width: 33%;  
+    padding: 30px;
+}
+.overflow{
+    background-color: white;
+    overflow: hidden;
+}
+.background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.b1{
+ background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+.b2{
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+.b3{
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+.b4{
+background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+.b5{
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+.b6{
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+.mask {
+    height: 100%;
+    background-color: rgba(87, 204,197, 0.8);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.mask:hover{
+    opacity: 1;
+}
+.mask.fas{
+    align-self: center;
+    background-color: transparent;
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+/*team*/
+.team,
+.container-team-inner {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+.overflow {
+    overflow: hidden;
+
+}
+.team-text,
+.icons,
+.foto, 
+.contact-text{
+    text-align: center;
+    justify-content: center;
+}
+a{
+    text-align: center;
+}
+.icons .fab{
+    width: 30px;
+    height:30px;
+    line-height: 30px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+    transition: all 1s;
+}
+.fab:hover {
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+}
+
+
+/*contact*/
+.contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer/world-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#content-text{
+    justify-content: center;
+    color: white;
+}
+.contact-text {
+   align-items: center 
+}
+.container .contact-form{
+    display: flex;
+}
+#name,
+#email,
+#phone,
+textarea{
+    height: 40px;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 55px;
+}
+#message{
+    height: 230px;
+}
+button{
+    width: auto;
+}
+#send{
+    color: white;
+    background-color: #0ed8d6;
+    width: 200px;
+    border-radius: 5px;
+}
+
+/*footer*/
+h6{
+    font-size: 10px;
+    display: inline;
+}
+
+
+
+
+
+
+

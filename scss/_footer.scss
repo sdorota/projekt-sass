@@ -1,0 +1,36 @@
+footer {
+    text-align: center;
+
+    .footer-inner{
+        margin: 0;
+        
+        h6{
+        font-size: 10px;
+        display: inline;
+        }
+        .icons {
+        text-align: center;
+        justify-content: center;
+
+            a {
+            text-align: center;
+            
+            .fab{
+            width: 30px;
+            height:30px;
+            line-height: 30px;
+            color: white;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 50%;
+            text-align: center;
+            align-self: center;
+            transition: all 1s;
+            }
+            }
+        }
+    }
+
+    
+    
+}

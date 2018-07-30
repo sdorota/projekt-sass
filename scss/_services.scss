@@ -1,0 +1,48 @@
+@import "zmienne";
+.services { 
+    height: 90vh;
+    margin: 4em;
+    display: flex;
+
+    .inner{
+        color: black;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;  
+        
+        #serv {
+            color: black;
+        }
+        #serv-content {
+            @include paragraphAfterHeadline;
+        }
+    }
+    .serv-info{
+        width: 33%;
+        margin-top: 40px;
+
+        i.fas{
+            width: 50px;
+            height:50px;
+            line-height: 50px;
+            color:white;
+            font-size: 25px;
+            background-color: $blue-background-color;
+            border: 1px solid $blue-background-color;
+            border-radius: 50%;
+            transition: all 0.4s;
+            text-align: center;
+            align-self: center;
+
+            &:hover{
+                transform: rotate(360deg);
+                background-color:  white;
+                color: $blue-background-color;
+            }
+        }
+        h4{
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@media all and (max-width: 992px) {
+    
+    .portfolio-foto {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 0px;
+        flex-wrap: wrap;
+    }
+    
+    .services,
+    .contact {
+        height: auto;
+        margin:0;
+        padding: 0;
+    }
+
+    .foto img {
+        max-width: 300px;
+    }
+
+    .contact {
+           #name,
+    #email,
+    #phone,
+    textarea {
+        height: 10px;
+        margin: 2px;
+    } 
+    }
+
+}

@@ -1,0 +1,73 @@
+@import "zmienne";
+@import 'mixins';
+
+.contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/footer/world-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 20px;
+    @include centrowanieFlex;
+
+    #content-text{
+        color:white;
+        text-align: center;
+        @include centrowanieFlex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+        .contact-text {
+            justify-content: center;
+            text-align: center;
+
+            p {
+               @include paragraphAfterHeadline;  
+            }
+        }
+
+        .contact-form{
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                
+                .labels {
+                                   
+                    #name {
+                    height: 40px;
+                    @include inputText;
+
+                }
+
+                    #email {
+                    height: 40px;
+                    @include inputText;
+                }
+
+                    #phone {
+                    height: 40px;
+                    @include inputText;
+                    }
+                }
+            
+                textarea {
+                    flex-basis: 50%;
+                    height: 180px;
+                    @include inputText;
+
+                }
+            }
+
+        }
+        #send{
+            width: auto;
+            color: white;
+            background-color: $blue-background-color;
+            width: 200px;
+            border-radius: 5px;
+            text-transform: uppercase;
+
+        }
+    }
+}

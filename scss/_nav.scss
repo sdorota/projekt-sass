@@ -1,0 +1,37 @@
+nav.navbar{
+    transition: all 0.4s;
+    background: transparent;
+    position: fixed;
+    margin-top: 0px;
+    z-index: 10;
+    width: 100%;
+
+        .navbar-brand{
+            font-size: 1.5em;
+            color: white;
+            font-size: 1.5em;
+            font-family: 'Droid Serif';
+            font-style: italic;
+            white-space: wrap;
+        }
+        .navbar-toggler-icon {
+            color: white;
+            padding-right: 50px;
+        }
+
+    ul{
+        margin-left: auto;
+                
+        a{
+        color: white;
+        font-size: 1.5em; 
+        }
+    }
+
+    &.scrolled {
+        background-color: $blue-background-color;  
+        position: fixed;
+    }
+   
+    
+}

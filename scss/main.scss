@@ -1,0 +1,21 @@
+@import "zmienne";
+@import "mixins";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat'; 
+    font-style: sans-serif;
+}
+
+@import "nav";
+@import "header";
+@import "services";
+@import "portfolio";
+@import "team";
+@import "contact";
+@import "footer";
+@import "responsive";
