@@ -1,7 +1,11 @@
 @media all and (max-width: 992px) {
     
-    .nav-item {
+    .nav-link {
         background: #0ed8d6;
+    }
+
+    button:focus {
+        outline: none;
     }
     .portfolio-foto {
         display: flex;
@@ -9,8 +13,16 @@
         margin: auto;
         padding: 0px;
         flex-wrap: wrap;
+        min-width:300px;
     }
     
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
     .services,
     .contact {
         height: auto;

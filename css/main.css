@@ -88,7 +88,9 @@ header {
       font-style: italic; }
   .services .serv-info {
     width: 33%;
-    margin-top: 40px; }
+    margin-top: 40px;
+    min-width: 350px;
+    margin: auto; }
     .services .serv-info i.fas {
       width: 50px;
       height: 50px;
@@ -109,14 +111,21 @@ header {
       margin-bottom: 15px; }
 
 @media all and (max-width: 992px) {
-  .nav-item {
+  .nav-link {
     background: #0ed8d6; }
+  button:focus {
+    outline: none; }
   .portfolio-foto {
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 0px;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    min-width: 300px; }
+  h4 {
+    font-size: 1.2rem; }
+  p {
+    font-size: 0.9rem; }
   .services,
   .contact {
     height: auto;
@@ -145,7 +154,9 @@ header {
       align-items: center;
       flex-wrap: wrap; }
       #portfolio .inner .portfolio-inner .portfolio-foto {
+        justify-content: center;
         width: 33%;
+        min-width: 350px;
         padding: 30px; }
         #portfolio .inner .portfolio-inner .portfolio-foto .overflow {
           background-color: white;
@@ -332,14 +343,21 @@ footer {
           transition: all 1s; }
 
 @media all and (max-width: 992px) {
-  .nav-item {
+  .nav-link {
     background: #0ed8d6; }
+  button:focus {
+    outline: none; }
   .portfolio-foto {
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 0px;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    min-width: 300px; }
+  h4 {
+    font-size: 1.2rem; }
+  p {
+    font-size: 0.9rem; }
   .services,
   .contact {
     height: auto;

@@ -23,7 +23,9 @@
             @include centrowanieFlex;
 
              .portfolio-foto {
+                justify-content: center;
                 width: 33%;  
+                min-width: 350px;
                 padding: 30px;
 
             .overflow{
